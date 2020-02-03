@@ -16,7 +16,7 @@ class Controller {
         // initialize options DB
         global $wpdb;
 
-        $table_name = $wpdb->prefix . 'wp2static_addon_zip_options';
+        $table_name = $wpdb->prefix . 'wp2static_addon_advanced_detection_options';
 
         $charset_collate = $wpdb->get_charset_collate();
 
@@ -122,7 +122,7 @@ class Controller {
         global $wpdb;
         $options = [];
 
-        $table_name = $wpdb->prefix . 'wp2static_addon_zip_options';
+        $table_name = $wpdb->prefix . 'wp2static_addon_advanced_detection_options';
 
         $rows = $wpdb->get_results( "SELECT * FROM $table_name" );
 
@@ -140,7 +140,7 @@ class Controller {
     public static function seedOptions() : void {
         global $wpdb;
 
-        $table_name = $wpdb->prefix . 'wp2static_addon_zip_options';
+        $table_name = $wpdb->prefix . 'wp2static_addon_advanced_detection_options';
 
         $query_string = "INSERT INTO $table_name (name, value, label, description) VALUES (%s, %s, %s, %s);";
         $query = $wpdb->prepare(
@@ -160,7 +160,7 @@ class Controller {
     public static function saveOption( $name, $value ) : void {
         global $wpdb;
 
-        $table_name = $wpdb->prefix . 'wp2static_addon_zip_options';
+        $table_name = $wpdb->prefix . 'wp2static_addon_advanced_detection_options';
 
         $query_string = "INSERT INTO $table_name (name, value) VALUES (%s, %s);";
         $query = $wpdb->prepare( $query_string, $name, $value );
