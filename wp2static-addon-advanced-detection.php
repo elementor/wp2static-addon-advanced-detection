@@ -17,9 +17,10 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'PLUGIN_NAME_VERSION', '0.1' );
+define( 'WP2STATIC_ADVANCED_DETECTION_PATH', plugin_dir_path( __FILE__ ) );
+define( 'WP2STATIC_ADVANCED_DETECTION_VERSION', '0.1' );
 
-require WP2STATIC_ZIP_PATH . 'vendor/autoload.php';
+require WP2STATIC_ADVANCED_DETECTION_PATH . 'vendor/autoload.php';
 
 function run_wp2static_addon_advanced_detection() {
 	$controller = new WP2StaticAdvancedDetection\Controller();

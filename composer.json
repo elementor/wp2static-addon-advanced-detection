@@ -1,6 +1,6 @@
 {
-    "name": "wp2static/wp2static-addon-zip",
-    "description": "Zip deployment Add-on for WP2Static.",
+    "name": "wp2static/wp2static-addon-advanced-detection",
+    "description": "Advanced Detection Add-on for WP2Static.",
     "homepage": "https://wp2static.com",
       "license": "UNLICENSE",
       "authors": [
@@ -12,10 +12,10 @@
       ],
     "type": "wordpress-plugin",
     "support": {
-        "issues": "https://github.com/WP2Static/wp2static-addon-zip/issues",
+        "issues": "https://github.com/WP2Static/wp2static-addon-advanced-detection/issues",
         "forum": "https://wp2static.com/community",
         "docs": "https://wp2static.com/documentation",
-        "source": "https://github.com/WP2Static/wp2static-addon-zip"
+        "source": "https://github.com/WP2Static/wp2static-addon-advanced-detection"
     },
     "repositories": [
         {
