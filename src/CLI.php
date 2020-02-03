@@ -1,14 +1,14 @@
 <?php
 
-namespace WP2StaticZip;
+namespace WP2StaticAdvancedDetection;
 
 use WP_CLI;
 
 
 /**
- * WP2StaticZip WP-CLI commands
+ * WP2StaticAdvancedDetection WP-CLI commands
  *
- * Registers WP-CLI commands for WP2StaticZip under main wp2static cmd
+ * Registers WP-CLI commands for WP2StaticAdvancedDetection under main wp2static cmd
  *
  * Usage: wp wp2static zip get_path|get_url
  */

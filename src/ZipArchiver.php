@@ -1,6 +1,6 @@
 <?php
 
-namespace WP2StaticZip;
+namespace WP2StaticAdvancedDetection;
 
 use ZipArchive;
 use RecursiveIteratorIterator;

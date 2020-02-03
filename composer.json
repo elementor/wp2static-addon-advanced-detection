@@ -37,13 +37,13 @@
     },
     "autoload": {
         "psr-4": {
-            "WP2StaticZip\\": "src/"
+            "WP2StaticAdvancedDetection\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "PHPStan\\WordPress\\": "tests/phpstan/",
-            "WP2StaticZip\\": "src/"
+            "WP2StaticAdvancedDetection\\": "src/"
         }
     },
     "config": {

@@ -1,6 +1,6 @@
 <?php
 
-namespace WP2StaticZip;
+namespace WP2StaticAdvancedDetection;
 
 class Controller {
     const VERSION = '0.1';
@@ -82,7 +82,7 @@ class Controller {
         if ( defined( 'WP_CLI' ) ) {
             \WP_CLI::add_command(
                 'wp2static zip',
-                [ 'WP2StaticZip\CLI', 'zip' ]);
+                [ 'WP2StaticAdvancedDetection\CLI', 'zip' ]);
         }
 	}
 
