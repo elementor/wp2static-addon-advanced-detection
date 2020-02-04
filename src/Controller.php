@@ -142,6 +142,17 @@ class Controller {
 
         $table_name = $wpdb->prefix . 'wp2static_addon_advanced_detection_options';
 
+
+
+        // 'detectArchives', // move to detection addon
+        // 'detectAttachments', // move to detection addon
+        // 'detectCommentPagination',// move to detection addon
+        // 'detectComments',// move to detection addon
+        // 'detectPluginAssets', // move to detection addon
+        // 'detectVendorCacheDirs', // move to detection addon
+        // 'detectWPIncludesAssets', // default include these (not that many..., maybe make disablable?)
+
+
         $query_string = "INSERT INTO $table_name (name, value, label, description) VALUES (%s, %s, %s, %s);";
         $query = $wpdb->prepare(
             $query_string,
