@@ -11,51 +11,33 @@
 
 <h3>Advanced Detection Options</h3>
 
-<label
-    for="<?php echo $view['wp2static_zip_addon_options']['deployment_url']->name; ?>"
->Deployment URL</label>
-
-<input
-    type="url"
-    name="<?php echo $view['wp2static_zip_addon_options']['deployment_url']->name; ?>"
-    id="<?php echo $view['wp2static_zip_addon_options']['deployment_url']->name; ?>"
-    value="<?php echo $view['wp2static_zip_addon_options']['deployment_url']->value; ?>"
-    required
->
-    
-<p><i><?php echo $view['wp2static_zip_addon_options']['deployment_url']->description; ?></i></p>
-
-
- 
-
  
 <h4>Exclude URL Patterns</h4>
 
-<p>After checking the Initial Crawl List, add any paths to filter out here.</p>
+<label
+    for="<?php echo $view['wp2static_advanced_detection_addon_options']['excludeURLs']->name; ?>"
+><?php echo $view['wp2static_advanced_detection_addon_options']['excludeURLs']->label; ?></label>
 
-<p>WP2Static automatically filters out common backup plugin directories, but please review your initial crawl list to ensure no unwanted URLs are detectected.</p>
+<textarea
+    class="widefat"
+    name="<?php echo $view['wp2static_advanced_detection_addon_options']['excludeURLs']->name; ?>"
+    id="<?php echo $view['wp2static_advanced_detection_addon_options']['excludeURLs']->name; ?>"
+    rows="5"
+    cols="10"><?php echo $view['wp2static_advanced_detection_addon_options']['excludeURLs']->value ? $view['wp2static_advanced_detection_addon_options']['excludeURLs']->value : ''; ?></textarea>
 
-<p>You can enter this as a partial string or full path (wildcards/regex not currently supported)</p>
-
-<pre>
-<code>.zip</code>
-<code>768x768.jpg</code>
-<code><?php echo $view['site_info']['site_url']; ?>/wp-content/themes/twentyseventeen/banana.jpg</code>
-<code>/my_pricelist.pdf</code>
-</pre>
-
-<textarea class="widefat" name="excludeURLs" id="excludeURLs" rows="5" cols="10"><?php echo $this->options->excludeURLs ? $this->options->excludeURLs : ''; ?></textarea>
+<p><i><?php echo $view['wp2static_advanced_detection_addon_options']['excludeURLs']->description; ?></i></p>
 
 <h4>Force-include URLs</h4>
 
-<p>Where the plugin fails to detect certain URLs that you know you want to include, please add these here. This will be applied after any exclusions, in case you want to exclude a whole directory, then include just one file from it.</p>
+<label
+    for="<?php echo $view['wp2static_advanced_detection_addon_options']['additionalURLs']->name; ?>"
+><?php echo $view['wp2static_advanced_detection_addon_options']['additionalURLs']->label; ?></label>
 
-<p><em>Supported formats are site root relative URLs</em></p>
+<textarea
+    class="widefat"
+    name="<?php echo $view['wp2static_advanced_detection_addon_options']['additionalURLs']->name; ?>"
+    id="<?php echo $view['wp2static_advanced_detection_addon_options']['additionalURLs']->name; ?>"
+    rows="5"
+    cols="10"><?php echo $view['wp2static_advanced_detection_addon_options']['additionalURLs']->value ? $view['wp2static_advanced_detection_addon_options']['additionalURLs']->value : ''; ?></textarea>
 
-<pre>
-<code><?php echo $view['site_info']['site_url']; ?></code>
-<code><?php echo $view['site_info']['site_url']; ?>/wp-content/themes/twentyseventeen/banana.jpg</code>
-<code>my_pricelist.pdf</code>
-</pre>
-
-<textarea class="widefat" name="additionalUrls" id="additionalUrls" rows="5" cols="10"><?php echo $this->options->additionalUrls ? $this->options->additionalUrls : ''; ?></textarea>
+<p><i><?php echo $view['wp2static_advanced_detection_addon_options']['additionalURLs']->description; ?></i></p>
