@@ -143,6 +143,7 @@ class Controller {
         $table_name = $wpdb->prefix . 'wp2static_addon_advanced_detection_options';
 
 
+        // 'detectCategoryPagination'
         // 'detectArchives', // move to detection addon
         // 'detectAttachments', // move to detection addon
         // 'detectChildTheme', // on by default
